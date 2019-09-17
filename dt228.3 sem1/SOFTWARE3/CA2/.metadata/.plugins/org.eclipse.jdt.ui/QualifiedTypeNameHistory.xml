@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.dao.UserDao"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="com.example.business.librarian"/>
+<fullyQualifiedTypeName name="com.sun.glass.ui.Cursor"/>
+<fullyQualifiedTypeName name="java.awt.Cursor"/>
+<fullyQualifiedTypeName name="javafx.scene.Cursor"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.dbcp.pool.impl.CursorableLinkedList.Cursor"/>
+</qualifiedTypeNameHistroy>

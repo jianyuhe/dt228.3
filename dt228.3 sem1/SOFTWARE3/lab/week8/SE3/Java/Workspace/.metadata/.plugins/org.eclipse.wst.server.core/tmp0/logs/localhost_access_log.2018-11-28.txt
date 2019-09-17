@@ -1,0 +1,11 @@
+127.0.0.1 - - [28/Nov/2018:20:55:28 +0000] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:55:31 +0000] "GET /SE3_WebAppExample/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:55:35 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:55:40 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:55:45 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:55:48 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:55:51 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:55:56 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:56:05 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 818
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:56:09 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 56502
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:56:20 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 363

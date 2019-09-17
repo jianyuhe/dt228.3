@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SE3_WebAppExample&apos; to &apos;librarySystem&apos;" description="Rename resource &apos;SE3_WebAppExample&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SE3_WebAppExample" name="librarySystem" stamp="1543434955674" updateReferences="true"/>
+</session>

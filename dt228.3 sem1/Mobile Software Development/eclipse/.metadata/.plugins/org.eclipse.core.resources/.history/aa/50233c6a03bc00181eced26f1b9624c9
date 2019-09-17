@@ -1,0 +1,29 @@
+
+public class Student extends Person {
+
+
+	private String studentId;
+	
+	public Student(String name, String gender, String studentId) {
+		super(name, gender);
+		this.studentId = studentId;
+		
+	}
+	
+	public String toString()
+	{
+		return ("student ID: " + studentId + super.toString());
+	}
+	
+	public String getStudentId()
+	{
+		return studentId;
+	}
+	
+	public void setStudentId(String newStudentId)
+	{
+	   studentId = newStudentId;
+	}
+	
+
+}

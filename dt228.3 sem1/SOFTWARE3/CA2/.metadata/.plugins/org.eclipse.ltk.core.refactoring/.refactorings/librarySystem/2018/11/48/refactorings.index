@@ -1,0 +1,15 @@
+1543430488624	Delete element
+1543430518325	Rename resource 'user_table.sql'
+1543436723242	Rename type 'User'
+1543437083002	Rename type 'UserDao'
+1543437747502	Rename type 'UserService'
+1543437764163	Delete element
+1543526400167	Rename type 'LoginUserCommand'
+1543526693160	Rename type 'CheckStudentCommand'
+1543526780392	Rename type 'LoginUserCommand'
+1543527038105	Rename type 'CkeckStudentCommand'
+1543527464231	Move 'librarianLogin.html' to 'WebContent'
+1543533676659	Delete element
+1543533682387	Delete element
+1543600996869	Rename type 'ReturnCommand'
+1543607640904	Delete element

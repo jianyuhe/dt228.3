@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+
+/** 
+ * <!-- begin-UML-doc -->
+ * <!-- end-UML-doc -->
+ * @author jianyu
+ * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+ */
+public class Student {
+
+	private String studentId;
+	
+	private String studentName;
+    
+	private Librarian librarian;
+	private Library library;
+
+	
+	public void borrowBook() {
+		if(librarian.isStudent() == true)
+		{
+			library.bookStock = library.bookStock + 1;
+		}
+	}
+
+	
+	public void returnBook() {
+		if(librarian.isStudent() == true)
+		{
+			library.bookStock = library.bookStock - 1;
+		}
+	}
+
+	
+	public Student(String studentId, String studentName) {
+		this.studentId = studentId;
+		this.studentName = studentName;
+	}
+
+
+	public String getStudentId() {
+		return studentId;
+	}
+
+}

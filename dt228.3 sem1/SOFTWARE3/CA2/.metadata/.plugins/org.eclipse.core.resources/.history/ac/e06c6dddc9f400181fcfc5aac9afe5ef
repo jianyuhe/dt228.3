@@ -1,0 +1,96 @@
+package com.example.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.example.business.student;
+import com.example.exceptions.DaoException;
+
+
+public class StudentDao extends Dao {
+
+    public student findStudentId(String sid) throws DaoException {
+
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        student u = null;
+        try {
+            con = this.getConnection();
+            
+            String query = "SELECT * FROM Student WHERE studentId = ?";
+            ps = con.prepareStatement(query);
+            ps.setString(1, sid);
+            
+            rs = ps.executeQuery();
+            if (rs.next()) {
+            	String studnetId = rs.getString("studentId");
+                String studentname = rs.getString("studentName");
+                String borrow = rs.getString("borrow");
+                String returned = rs.getString("returned");
+                
+                u = new student(studnetId, studentname, borrow, returned);
+            }
+        } catch (SQLException e) {
+            throw new DaoException("findStudentId " + e.getMessage());
+        } finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+                if (ps != null) {
+                    ps.close();
+                }
+                if (con != null) {
+                    freeConnection(con);
+                }
+            } catch (SQLException e) {
+                throw new DaoException("findStudentId" + e.getMessage());
+            }
+        }
+        return u;     // u may be null 
+    }
+    
+    public void doBorrow(String sid) throws DaoException {
+
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        
+        try {
+            con = this.getConnection();
+            
+            String query = "UPDATE Student SET borrow = 'T' where studentId = ?";
+            ps = con.prepareStatement(query);
+            ps.setString(1, sid);
+            
+             ps.executeUpdate();
+            
+        } catch (SQLException e) {
+            throw new DaoException("doBorrow " + e.getMessage());
+        } finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+                if (ps != null) {
+                    ps.close();
+                }
+                if (con != null) {
+                    freeConnection(con);
+                }
+            } catch (SQLException e) {
+                throw new DaoException("doBorrow" + e.getMessage());
+            }
+        }
+
+    }
+   
+}   
+
+   
+            
+    

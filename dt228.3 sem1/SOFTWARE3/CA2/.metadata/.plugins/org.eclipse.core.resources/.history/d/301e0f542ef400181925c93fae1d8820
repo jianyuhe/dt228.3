@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%@page import="java.util.ArrayList"%>  
+<%@page import="com.example.command.CheckStudentCommand"%> 
+ <%@page import="com.example.business.student"%> 
+<%     student info = (student) session.getAttribute("student");%>
+<table>
+<tr>
+                        <td> Student ID  : </td><td> out.println(info.get(0)); </td> 
+                    </tr>
+
+
+</table>
+</body>
+</html>

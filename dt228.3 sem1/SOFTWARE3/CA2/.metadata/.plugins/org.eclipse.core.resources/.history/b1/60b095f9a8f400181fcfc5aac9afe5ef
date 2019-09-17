@@ -1,0 +1,32 @@
+package com.example.service;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.example.business.student;
+import com.example.dao.StudentDao;
+import com.example.exceptions.DaoException;
+
+public class StudentService{
+
+	StudentDao dao = new StudentDao();
+	
+	public student checkid(String sid){
+		
+		student u = null;
+		try {			
+			u = dao.findStudentId(sid);
+		} 
+		catch (DaoException e) {
+			e.printStackTrace();
+		}
+		return u;
+		
+	}
+	  
+	
+	}
+

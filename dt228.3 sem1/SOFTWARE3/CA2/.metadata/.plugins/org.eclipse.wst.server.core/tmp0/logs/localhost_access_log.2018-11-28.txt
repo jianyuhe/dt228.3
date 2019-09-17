@@ -1,0 +1,16 @@
+127.0.0.1 - - [28/Nov/2018:20:38:28 +0000] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:38:30 +0000] "GET /librarySystem/WEB-INF/classes/com/example/dao/StudentDao.java HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:50:21 +0000] "GET /librarySystem/login.html HTTP/1.1" 200 732
+127.0.0.1 - - [28/Nov/2018:20:59:36 +0000] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:20:59:47 +0000] "GET /librarySystem/login.html HTTP/1.1" 200 732
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:00:38 +0000] "POST /librarySystem/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:00:46 +0000] "POST /librarySystem/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:02:10 +0000] "POST /librarySystem/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:02:11 +0000] "GET /librarySystem/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:02:13 +0000] "POST /librarySystem/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:02:19 +0000] "POST /librarySystem/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:03:57 +0000] "POST /librarySystem/FrontController HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:04:03 +0000] "POST /librarySystem/FrontController HTTP/1.1" 200 383
+127.0.0.1 - - [28/Nov/2018:21:04:44 +0000] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:07:27 +0000] "GET /librarySystem/login.html HTTP/1.1" 200 734
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:21:07:35 +0000] "POST /librarySystem/FrontController HTTP/1.1" 200 814

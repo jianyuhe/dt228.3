@@ -1,0 +1,17 @@
+
+public class test {
+	public static void main(String[] args){
+		
+		
+		Student joe = new Student("D123", "joe");
+		Librarian herq = new Librarian("h33", "herq");
+		 Library l = new Library("g33", "heg fe", 30);
+	    System.out.println(joe.studentId);
+	    herq.checkStudentId();
+	    l.updatebooks();
+	   // joe.borrowBook();
+	  
+	
+		
+	    }
+}

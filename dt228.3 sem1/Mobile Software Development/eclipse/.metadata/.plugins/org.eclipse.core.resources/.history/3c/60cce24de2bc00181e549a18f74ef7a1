@@ -1,0 +1,33 @@
+package week1;
+
+public class Student extends Person {
+
+private static int studentIDCounter = 1;
+	private int studentId;
+	
+	public Student(String name, String gender, int studentId,int studentIDCounter) {
+		super(name, gender);
+		studentIDCounter++;
+		studentId = this.studentIDCounter;
+	}
+	
+	public String toString()
+	{
+		return ("student ID: " + studentId + super.toString());
+	}
+	
+	public int getStudentId()
+	{
+		return studentId;
+	}
+	
+	public void setStudentId(int newStudentId)
+	{
+	   studentId = newStudentId;
+	   
+	}
+	
+	
+	}
+
+

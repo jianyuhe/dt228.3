@@ -1,0 +1,44 @@
+CREATE TABLE `Student` (
+  `studentId` varchar(11) NOT NULL unique,
+  `studentName` varchar(50) NOT NULL,
+  `borrow` char(1),
+  `returned` char(1),
+ 
+  );
+  
+  CREATE TABLE `Librarian` (
+  `librarianId` varchar(11) NOT NULL unique,
+  `librarianName` varchar(50) NOT NULL,
+  `isStudent` char(1),
+
+  );
+
+  CREATE TABLE `Library` (
+  `bookId` varchar(11) NOT NULL unique,
+  `bookTitle` varchar(50) NOT NULL,
+  `bookStock` int(50) NOT NULL,
+  `borrower` varchar(50),
+  PRIMARY KEY  (`bookId`)
+  );
+  
+  ALTER TABLE Student
+ADD CONSTRAINT check_b
+  CHECK (borrow IN ('F', 'T'));
+  
+  ALTER TABLE Student
+ADD CONSTRAINT check_r
+  CHECK (returned IN ('F', 'T'));
+  
+  ALTER TABLE Librarian
+ADD CONSTRAINT check_is
+  CHECK (isStudent IN ('F', 'T'));
+  
+   update Student set borrow = 'F', returned = 'F' where studentId = "d333";
+    update Student set borrow = 'F', returned = 'F' where studentId = "d343";
+     update Student set borrow = 'F', returned = 'F' where studentId = "d455";
+      update Student set borrow = 'F', returned = 'F' where studentId = "d555";
+  insert into Student value("d343", "fruent", null, null ),("d455", "fgg",null,null);
+  insert into Student value("d333", "leona", null, null ),("d555", "lux",null,null);
+ 
+  insert into Librarian value ("s34", "fahv", null), ("s235", "dhsaasi", null);
+  insert into Library value("b544", "world", 20, null), ("b765", "animal", 15, null);

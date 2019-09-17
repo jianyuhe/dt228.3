@@ -1,0 +1,13 @@
+import week1.Student;
+
+public class Control {
+	public static void main(String[] args)
+    {
+    	Person P = new Person("carl", "M");
+    	
+    	System.out.println("Name: " + P.getName() + " Gender: " + P.getGender());
+    	System.out.println(P.toString());
+    	 Student s = null;
+    	 System.out.println(s instanceof Person);
+    }
+}
